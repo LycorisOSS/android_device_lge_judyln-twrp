@@ -1,5 +1,5 @@
 
-LOCAL_PATH := device/lge/judypn
+LOCAL_PATH := device/lge/judyln
 
 PRODUCT_PLATFORM := sdm845
 

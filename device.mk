@@ -1,3 +1,6 @@
+# Shipping level
+PRODUCT_SHIPPING_API_LEVEL := 27
+
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)

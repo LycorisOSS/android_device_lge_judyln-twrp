@@ -44,3 +44,7 @@ PRODUCT_PACKAGES += \
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2025-12-31
+
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_icu

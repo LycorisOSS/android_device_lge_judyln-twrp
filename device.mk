@@ -20,19 +20,15 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-# Enable update engine sideloading by including the static version of the
-# boot_control HAL and its dependencies.
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+PRODUCT_PACKAGES += \
     bootctrl.sdm845 \
-    libgptutils \
-    libz \
-    libcutils
-
+    bootctrl.sdm845.recovery
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service \
+    android.hardware.boot@1.0-impl.recovery
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
